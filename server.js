@@ -6,6 +6,11 @@ import chatRoutes from "./routes/chat.js";
 
 const app = express();
 
+
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 // Render controls the PORT
 const PORT = process.env.PORT || 8080;
 
